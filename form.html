@@ -1,0 +1,117 @@
+
+<form class="sampleform" data-toggle="validator"  autocomplete="off" role="form" method="post" id="invoice_form">
+
+
+
+
+
+<div class="panel panel-default bs-example">
+    <div class="panel-heading"><h4>Invoice Details</h4>
+  </div>
+   <div class="panel-body">
+
+   <div class="row">
+
+<div class="col-lg-3">
+<div class="form-group">
+                <label class="control-label" for="InvoiceNo.">Invoice No.</label>
+                <!-- <div class="input-group">
+              <div class="input-group-addon">
+	            <span>GL/19-20/</span>
+              </div> -->
+              <input type="text" inputmode="numeric" maxlength="3"class="form-control"  name="invoice_no" id="invoice_no"  placeholder="Enter Invoice Number" onkeypress="return event.charCode >= 48 && event.charCode <= 57"data-error="Please enter only numbers." required >
+            <!-- </div> -->
+            <div class="help-block with-errors"></div>
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="form-group">
+        <label>Select Date: </label>
+                <div id="datepicker" class="input-group date" data-date-format="-yyyy-mm-dd">
+                <input type="text" name="order_date" id="order_date" class="form-control" readonly placeholder="Select Invoice Date" />
+                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                </div>
+              </div>
+
+</div>
+
+<div class="col-lg-3">
+
+<div class="form-group">
+                      <label for="Eway Bill No">Eway Bill No.</label>
+                      <input type="text" class="form-control" minlength="12" inputmode="numeric"name="eway_bill_no" id="eway_bill_no" onkeypress="return event.charCode >= 48 && event.charCode <= 57" data-error="Please enter valid Eway Number." placeholder="Enter 12 digit Eway Bill No.">
+                      <div class="help-block with-errors"></div>
+                    </div>
+</div>
+</div>
+
+<div class="row">
+
+<div class="col-lg-3">
+<div class="form-group">
+                        <label for="Dispatch From.">Dispatch From</label>
+                        <input type="text" class="form-control" name="dispatch_from" id="dispatch_from" autocomplete="off" autocorrect="off" spellcheck="false"  placeholder="Enter City then(State)" data-error="Please enter State." required >
+                        <div class="help-block with-errors"></div>
+                      </div>
+</div>
+
+<div class="col-lg-3">
+<div class="form-group">
+                          <label for="Place Of Supply">Place Of Supply</label>
+                          <input type="text" class="form-control" name="place_of_supply" id="place_of_supply" autocomplete="off" autocorrect="off"  spellcheck="false"  placeholder="Enter City then(State)" data-error="Please enter State." required>
+                          <div class="help-block with-errors"></div>
+                        </div>
+</div>
+
+<div class="col-lg-3">
+<div class="form-group">
+                            <label for="Vehicle">Vehicle No.</label>
+                            <input type="text" minlength="9"maxlength="10"class="form-control" name="vehicle_no" id="vehicle_no"  data-error="Please enter valid vehicle Number."placeholder="Ex. MH01AB1234" style="text-transform: uppercase">
+                            <div class="help-block with-errors"></div>
+                          </div>
+</div>
+
+
+<div class="col-lg-3">
+<div class="form-group">
+                              <label for="Transport Name">Transport Name</label>
+                              <input type="text" class="form-control" name="transport_name" id="transport_name"  placeholder="Enter Transport name">
+                            </div>
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-lg-3">
+<div class="form-group">
+                                <label for="Reverse Charge">Reverse Charge Applicable</label>
+                                <select class="form-control" name="reverse_charge_applicable" id="reverse_charge_applicable">
+                                  <option selected="selected">No</option>
+                                  <option>Yes</option>
+                                </select>
+                              </div>
+</div>
+
+</div>
+
+
+
+
+
+      </div>
+ </div>
+
+
+
+
+ <div class="panel panel-default bs-example">
+    <div class="panel-heading"><h4><strong>Details of Receiver | Bill To</strong></h4></div>
+   <div class="panel-body">
+
+
+
+<div class="row">
+
+<div class="col-lg-3">
